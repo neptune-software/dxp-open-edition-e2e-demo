@@ -34,5 +34,6 @@ jobs:
 # Actual Test Settings
         DXP_OE_SERVER_URL: ${{ secrets.CDCI_STAGING_URL }}
         DXP_OE_SERVER_TOKEN: ${{ secrets.CDCI_STAGING_TOKEN }}  
+        PROXY_PORT: 3000
         PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }} 
         HEADLESS: true 

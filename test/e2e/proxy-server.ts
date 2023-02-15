@@ -46,6 +46,9 @@ class ProxyServer {
         if (!port) {
           port = parseInt(process.env.PROXY_PORT);
         }
+        if(!port){
+          port = 3000;
+        }
         this.server = this.getApp().listen(port, () => {
 
           console.log(`you now can open http://localhost:${port}/... that will proxy towards ${process.env.DXP_OE_SERVER_URL}/...`);

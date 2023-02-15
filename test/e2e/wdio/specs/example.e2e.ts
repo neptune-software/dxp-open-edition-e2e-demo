@@ -7,7 +7,7 @@ describe("nepte2e_demo Sample App", () => {
     await nepte2e_demo.open();
     await nepte2e_demo.injectUI5();
 
-    await browser.pause(3000);
+    await browser.pause(2000);
  
     const textBeforeToggle = await (await nepte2e_demo.oText()).getText(false);
     expect(textBeforeToggle).toBe("Text Value A");
