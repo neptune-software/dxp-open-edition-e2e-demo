@@ -38,7 +38,7 @@
 								{
 									"attribute": "title",
 									"grouping": "Properties",
-									"value": "Master Page changed",
+									"value": "Master Page Hello",
 									"script": "",
 									"translation": []
 								},
@@ -555,7 +555,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "23.2.15.105",
+	"ver": "23.2.15.1015",
 	"application": "nepte2e_demo",
 	"title": "",
 	"description": "",
