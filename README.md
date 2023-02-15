@@ -3,3 +3,6 @@
 
 # dxp-open-edition-e2e-demo
 DXP Open Edition E2E Demo
+
+
+On commit and push of neptune app *nepte2e_demo* a browserstack and percy test will automatically kick off 
