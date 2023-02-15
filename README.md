@@ -1,4 +1,4 @@
-[![BrowserStack Status](https://automate.browserstack.com/badge.svg?badge_key=138MTVNV24yb1ViSURmbi9ZL2xvWERvRm5TZ0dqTEEwaXlMaHd4Mzg2dVdKRT0tLW5nZ2Z5SG0vdmZVYkZ4dUp4VnVyWVE9PQ==--b115fe49328e2175075174e03e7c292d9b16564c)](https://automate.browserstack.com/public-build/138MTVNV24yb1ViSURmbi9ZL2xvWERvRm5TZ0dqTEEwaXlMaHd4Mzg2dVdKRT0tLW5nZ2Z5SG0vdmZVYkZ4dUp4VnVyWVE9PQ==--b115fe49328e2175075174e03e7c292d9b16564c)
+[![BrowserStack Status](https://automate.browserstack.com/badge.svg?badge_key=cTRVRWxpSUcyeEtWeHZFZXQrYTE4dDZmWTBvVlNsZFlkcFkvMGQ5SDcwUT0tLVFoQ0hQYjZWNTNtTjQwc0JwcWVtWGc9PQ==--f85803eee85c8a7d3f63b4cd9c10f4b3c26b057d)](https://automate.browserstack.com/public-build/cTRVRWxpSUcyeEtWeHZFZXQrYTE4dDZmWTBvVlNsZFlkcFkvMGQ5SDcwUT0tLVFoQ0hQYjZWNTNtTjQwc0JwcWVtWGc9PQ==--f85803eee85c8a7d3f63b4cd9c10f4b3c26b057dc)
 
 
 # dxp-open-edition-e2e-demo
