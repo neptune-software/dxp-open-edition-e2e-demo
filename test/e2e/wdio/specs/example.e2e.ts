@@ -2,7 +2,7 @@ import nepte2e_demo from "../pageobjects/nepte2e_demo";
 import percySnapshot from "@percy/webdriverio";
 
 describe("nepte2e_demo Sample App", () => {
-  it("Click Toggle Buitton", async () => {
+  it("Click Toggle Button", async () => {
 
     await nepte2e_demo.open();
     await nepte2e_demo.injectUI5();
