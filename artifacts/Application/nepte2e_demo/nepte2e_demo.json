@@ -320,7 +320,7 @@
 								{
 									"attribute": "title",
 									"grouping": "Properties",
-									"value": "Detail Page",
+									"value": "Very big change in Text of Detail Page",
 									"script": "",
 									"translation": []
 								},
@@ -555,7 +555,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "23.2.15.1015",
+	"ver": "23.2.15.1245",
 	"application": "nepte2e_demo",
 	"title": "",
 	"description": "",
