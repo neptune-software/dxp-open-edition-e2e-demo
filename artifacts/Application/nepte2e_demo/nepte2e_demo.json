@@ -38,7 +38,7 @@
 								{
 									"attribute": "title",
 									"grouping": "Properties",
-									"value": "Master Page",
+									"value": "Master Page changed",
 									"script": "",
 									"translation": []
 								},
@@ -120,7 +120,6 @@
 											"grouping": "Events",
 											"value": "alert(\"asd\");",
 											"script": "alert(\"asd\");",
-											"language": "typescript",
 											"translation": []
 										}
 									],
@@ -556,7 +555,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "23.2.15.842",
+	"ver": "23.2.15.105",
 	"application": "nepte2e_demo",
 	"title": "",
 	"description": "",
