@@ -6,3 +6,5 @@ if(oText.getText() === textValueA){
 }else{
     oText.setText(textValueA);
 }
+
+console.log("Pressed toggleButton");
