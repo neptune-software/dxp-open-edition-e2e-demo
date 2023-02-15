@@ -1,12 +1,12 @@
 name: E2E - Browserstack & Percy
 
 on:
-#  push:
-#    paths-ignore:
-#      - 'docs/**'
-#      - '.github/workflows/docs.yml'
+  push:
+    paths:
+       - 'artifacts/Application/neptunee2e_demo/**' # App has changed 
+       - 'test/e2e/wdio/specs/**' # Test has changed
 #  pull_request:
- workflow_dispatch:
+  workflow_dispatch:
  
 permissions: read-all
 
