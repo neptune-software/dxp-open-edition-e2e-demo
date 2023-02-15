@@ -1,0 +1,33 @@
+name: E2E - Browserstack & Percy
+
+on:
+#  push:
+#    paths-ignore:
+#      - 'docs/**'
+#      - '.github/workflows/docs.yml'
+#  pull_request:
+ workflow_dispatch:
+ 
+permissions: read-all
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 'Checkout the repository' 
+      uses: actions/checkout@v3
+    - name: 'Use Node 18'
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    - name: 'Running npm ci (precise version of npm install)'
+      run: npm ci
+    - name: 'run npm run wdio:percy:bs'
+      run: npm run wdio:percy:bs
+      env:
+# Actual Test Settings
+        DXP_OE_SERVER_URL: ${{ secrets.CDCI_STAGING_URL }}
+        DXP_OE_SERVER_TOKEN: ${{ secrets.CDCI_STAGING_TOKEN }}  
+        PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
+        BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
+        BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}

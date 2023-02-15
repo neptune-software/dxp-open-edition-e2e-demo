@@ -1,0 +1,38 @@
+name: E2E - Percy
+
+on:
+#  push:
+#    paths-ignore:
+#      - 'docs/**'
+#      - '.github/workflows/docs.yml'
+#  pull_request:
+ workflow_dispatch:
+ 
+permissions: read-all
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 'Checkout the repository' 
+      uses: actions/checkout@v3
+    - name: 'Use Node 18'
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    - name: 'Running npm ci (precise version of npm install)'
+      run: npm ci
+    - name: 'Update Chrome' # See https://stackoverflow.com/q/63651059/419956
+      run: |
+          wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+          sudo apt-get update
+          sudo apt-get --only-upgrade install google-chrome-stable
+    - name: 'run npm run wdio:percy:local'
+      run: npm run wdio:percy:local
+      env:
+# Actual Test Settings
+        DXP_OE_SERVER_URL: ${{ secrets.CDCI_STAGING_URL }}
+        DXP_OE_SERVER_TOKEN: ${{ secrets.CDCI_STAGING_TOKEN }}  
+        PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }} 
+        HEADLESS: true 
