@@ -7,9 +7,16 @@
 	},
 	"name": "neptunesoftware-dxp-e2e-demo",
 	"description": "Neptune E2E Demo Apps",
-	"ver": "23.2.15.729",
+	"ver": "23.2.15.732",
 	"enableCICD": true,
-	"apps": [],
+	"apps": [
+		{
+			"id": "a1cb8115-03ad-ed11-a8e0-000d3ada944e",
+			"application": "nepte2e_demo",
+			"title": "",
+			"description": ""
+		}
+	],
 	"api": [],
 	"odataSource": [],
 	"odataMock": [],

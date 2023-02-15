@@ -1,0 +1,8 @@
+const textValueA = "Text Value A";
+const textValueB = "Text Value B";
+
+if(oText.getText() === textValueA){
+    oText.setText(textValueB);
+}else{
+    oText.setText(textValueA);
+}
